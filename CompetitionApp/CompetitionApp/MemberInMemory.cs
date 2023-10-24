@@ -6,9 +6,9 @@
 
         private List<float> grades = new List<float>();
         
-        private int coupleNumber;
+        public string coupleNumber;
 
-        public MemberInMemory(int coupleNumber)
+        public MemberInMemory(string coupleNumber)
             : base(coupleNumber)
         { grades = new List<float>(); }
 

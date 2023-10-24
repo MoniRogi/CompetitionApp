@@ -1,4 +1,6 @@
 ﻿using CompetitionApp;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Diagnostics;
 
 namespace CompetitionApp
 {
@@ -8,17 +10,16 @@ namespace CompetitionApp
 
         public abstract event GradeAddedDelegate GradeAdded;
 
-        public MemberBase(int coupleNumber)
+        public string CoupleNumber { get; private set; }
+
+        public MemberBase(string coupleNumber)
         {
             this.CoupleNumber = coupleNumber;
         }
-
-        public string Number { get; private set; }
         
-
         public abstract void AddGrade(float grade);
-
-
+      
+        
         public abstract void AddGrade(int grade);
 
 

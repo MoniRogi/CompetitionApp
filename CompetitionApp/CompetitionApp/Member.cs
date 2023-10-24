@@ -2,9 +2,9 @@
 {
     public class Member
     {
-        public virtual int CoupleNumber { get; set; }
+        public virtual string CoupleNumber { get; set; }
 
-        public Member(int coupleNumber)
+        public Member(string coupleNumber)
         {
             this.CoupleNumber = coupleNumber;           
         }
